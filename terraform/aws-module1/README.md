@@ -94,7 +94,7 @@ Resultat attendu:
 ## 7. Acces cluster - Step 6
 
 ```bash
-aws eks update-kubeconfig --name "$(terraform output -raw cluster_name)" --region "${AWS_REGION:-eu-west-3}"
+aws eks update-kubeconfig --name "$(terraform output -raw cluster_name)" --region "${AWS_REGION:-eu-south-1}"
 kubectl get nodes
 kubectl get ns
 ```
